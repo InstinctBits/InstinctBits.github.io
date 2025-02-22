@@ -75,13 +75,13 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
     <template #heading>💡 Our Communities – Connect, Learn & Grow</template>
 
     We foster discussions and collaborations through our vibrant online communities: - Coming Soon !
-    Tic-Tac-Toe (Technology)
+    tic-tac-toe (Technology)
     + 
-    EduSync (Education)
+    edusync (Education)
     +
-    HealthSync (Healthcare)
+    healthsync (Healthcare)
     +
-    Re-TThink (Current Trends & Social Impact)
+    re-tthink (Current Trends & Social Impact)
     <!-- <br />
     - Tic-Tac-Toe (Technology) – Dive into the latest innovations and tech trends. - Coming Soon !
     <br />
