@@ -22,6 +22,8 @@ npm install
 npm run dev
 ```
 
+Test deployment - check 08-Mar-2025
+
 ### Compile and Minify for Production
 
 ```sh
