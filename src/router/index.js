@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'communities',
       component: () => import('../views/CommunitiesView.vue'),
     },
+    {
+      path: '/pixel-strike-force',
+      name: 'pixel-strike-force',
+      component: () => import('../views/PixelStrikeForceView.vue'),
+    },
   ],
 })
 
