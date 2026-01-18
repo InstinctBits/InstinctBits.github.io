@@ -80,6 +80,21 @@ import ToolingIcon from '../components/icons/IconTooling.vue'
           </a>
         </div>
       </WelcomeItem>
+
+      <WelcomeItem>
+        <template #icon>
+          <ToolingIcon />
+        </template>
+        <template #heading>Discord Server</template>
+        <p class="tagline">Join our gaming community</p>
+        <p>
+          Connect with fellow gamers in real-time on our Discord server. Chat, share tips,
+          organize gaming sessions, and be part of the daily conversation.
+        </p>
+        <div class="discord-widget">
+          <iframe src="https://discord.com/widget?id=1343277918306041978&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+      </WelcomeItem>
     </div>
 
     <div class="cta-section">
@@ -211,6 +226,17 @@ li {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+.discord-widget {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.discord-widget iframe {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 @media (min-width: 1024px) {
