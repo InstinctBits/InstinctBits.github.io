@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'pixel-strike-force',
       component: () => import('../views/PixelStrikeForceView.vue'),
     },
+    {
+      path: '/instinct-bits-lab',
+      name: 'instinct-bits-lab',
+      component: () => import('../views/InstinctBitsLabView.vue'),
+    },
   ],
 })
 

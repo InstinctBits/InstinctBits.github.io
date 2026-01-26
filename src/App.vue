@@ -12,6 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/instinct-bits-lab">Instinct Bits Lab</RouterLink>
         <RouterLink to="/communities">Communities</RouterLink>
         <RouterLink to="/pixel-strike-force">Pixel Strike Force</RouterLink>
         <RouterLink to="/about">About</RouterLink>

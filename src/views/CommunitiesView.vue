@@ -12,6 +12,15 @@ import CommunityIcon from '../components/icons/IconCommunity.vue'
       <a href="https://digitechnomads.com/" target="_blank" rel="noopener">Digitechnomads</a>.
     </p>
 
+    <div class="sponsor-section">
+      <p>
+        Supported and Sponsored by 
+        <a href="https://digitechnomads.com" target="_blank" rel="noopener" class="sponsor-link">
+          Digitech Nomads
+        </a>
+      </p>
+    </div>
+
     <div class="community-grid">
       <WelcomeItem>
         <template #icon>
@@ -156,6 +165,31 @@ li {
 .social-links a {
   color: var(--color-heading);
   padding: 0 0.5rem;
+}
+
+.sponsor-section {
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: var(--color-background-soft);
+  border-radius: 8px;
+}
+
+.sponsor-section p {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.sponsor-link {
+  color: var(--color-heading);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-heading);
+  transition: opacity 0.2s;
+}
+
+.sponsor-link:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 1024px) {

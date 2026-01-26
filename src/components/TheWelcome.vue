@@ -37,6 +37,27 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <ToolingIcon />
     </template>
+    <template #heading>🔬 Instinct Bits Lab</template>
+
+    Innovation hub for experimental projects, cutting-edge technologies, and creative explorations:
+    <br /><br />
+    🚀 <strong>ConvergioAI</strong> — AI-Powered Convergence Platform (In Development)
+    <br />
+    <em>Revolutionizing how AI technologies converge with modern development workflows</em>
+    <br /><br />
+    🔧 Research & Development — Exploring emerging technologies
+    <br />
+    🧪 Experimental Projects — Testing bold ideas and prototypes
+    <br />
+    📚 Knowledge Sharing — Technical insights and community learning
+    <br /><br />
+    <em>Supported and Sponsored by <a href="https://digitechnomads.com" target="_blank" rel="noopener">Digitech Nomads</a></em>
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
     <template #heading>🎮 Pixel Strike Force</template>
 
     Creating a vibrant gaming ecosystem with content, community, and creative storytelling:
