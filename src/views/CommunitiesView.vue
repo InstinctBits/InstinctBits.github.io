@@ -9,13 +9,16 @@ import CommunityIcon from '../components/icons/IconCommunity.vue'
     <p class="intro">
       Building interconnected communities that empower real-world collaboration.
       All powered by Discourse, in collaboration with
-      <a href="https://digitechnomads.com/" target="_blank" rel="noopener">Digitechnomads</a>.
+      <a href="https://digitechnomads.com/" target="_blank" rel="noopener">
+        <img src="https://digitechnomads.com/wp-content/uploads/2025/09/favicon.png" alt="Digitech Nomads" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" />Digitechnomads
+      </a>.
     </p>
 
     <div class="sponsor-section">
       <p>
         Supported and Sponsored by 
         <a href="https://digitechnomads.com" target="_blank" rel="noopener" class="sponsor-link">
+          <img src="https://digitechnomads.com/wp-content/uploads/2025/09/favicon.png" alt="Digitech Nomads" class="sponsor-icon" />
           Digitech Nomads
         </a>
       </p>
@@ -186,10 +189,19 @@ li {
   text-decoration: none;
   border-bottom: 2px solid var(--color-heading);
   transition: opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .sponsor-link:hover {
   opacity: 0.8;
+}
+
+.sponsor-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 @media (min-width: 1024px) {

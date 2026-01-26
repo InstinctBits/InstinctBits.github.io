@@ -51,7 +51,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <br />
     📚 Knowledge Sharing — Technical insights and community learning
     <br /><br />
-    <em>Supported and Sponsored by <a href="https://digitechnomads.com" target="_blank" rel="noopener">Digitech Nomads</a></em>
+    <em>Supported and Sponsored by <a href="https://digitechnomads.com" target="_blank" rel="noopener"><img src="https://digitechnomads.com/wp-content/uploads/2025/09/favicon.png" alt="Digitech Nomads" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" />Digitech Nomads</a></em>
   </WelcomeItem>
 
   <WelcomeItem>

@@ -15,6 +15,7 @@ import ToolingIcon from '../components/icons/IconTooling.vue'
       <p>
         Supported and Sponsored by 
         <a href="https://digitechnomads.com" target="_blank" rel="noopener" class="sponsor-link">
+          <img src="https://digitechnomads.com/wp-content/uploads/2025/09/favicon.png" alt="Digitech Nomads" class="sponsor-icon" />
           Digitech Nomads
         </a>
       </p>
@@ -240,10 +241,19 @@ li {
   text-decoration: none;
   border-bottom: 2px solid var(--color-heading);
   transition: opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .sponsor-link:hover {
   opacity: 0.8;
+}
+
+.sponsor-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 .featured-product {
