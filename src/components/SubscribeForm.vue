@@ -58,24 +58,22 @@ async function submit() {
 
 <style scoped>
 .subscribe {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem 2rem;
-  text-align: center;
+  flex: 1 0 100%;
+  width: 100%;
+  margin: 0.25rem 0 0;
+  text-align: left;
 }
 
 .row {
   display: flex;
   gap: 0.5rem;
-  max-width: 32rem;
-  margin: 0.75rem auto 0;
+  margin: 0.5rem 0 0;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 input[type='email'] {
   flex: 1;
-  min-width: 14rem;
+  min-width: 10rem;
   padding: 0.75rem 1rem;
   border: 1px solid var(--color-border);
   border-radius: 6px;

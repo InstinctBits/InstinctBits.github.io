@@ -18,11 +18,11 @@ import SubscribeForm from './components/SubscribeForm.vue'
         <RouterLink to="/pixel-strike-force">Pixel Strike Force</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+      <SubscribeForm />
     </div>
   </header>
 
   <RouterView />
-  <SubscribeForm />
 </template>
 
 <style scoped>
