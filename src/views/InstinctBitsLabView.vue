@@ -24,16 +24,14 @@ import ToolingIcon from '../components/icons/IconTooling.vue'
     <div class="featured-product">
       <h2>Featured Innovation</h2>
       <div class="product-card">
-        <h3>ConvergioAI</h3>
-        <p class="product-tagline">AI-Powered Convergence Platform</p>
+        <h3><a href="https://convergio.digitechnomads.com/" target="_blank" rel="noopener">ConvergioAI</a></h3>
+        <p class="product-tagline">Open-source AI CRM</p>
         <p class="product-description">
-          ConvergioAI is our flagship product currently in conceptualization phase, designed to 
-          revolutionize how AI technologies converge with modern development workflows. This ambitious 
-          project aims to bridge the gap between artificial intelligence and practical software solutions, 
-          creating seamless integration points for developers and businesses.
+          ConvergioAI is an open-source, AI-powered omnichannel CRM for agencies and small businesses.
+          It is live at convergio.digitechnomads.com.
         </p>
         <div class="product-status">
-          <span class="status-badge">In Development</span>
+          <span class="status-badge">Live</span>
         </div>
       </div>
     </div>
@@ -285,6 +283,11 @@ li {
   color: var(--color-heading);
   margin-bottom: 0.5rem;
   font-weight: 700;
+}
+
+.product-card h3 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .product-tagline {

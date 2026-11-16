@@ -41,9 +41,9 @@ import SupportIcon from './icons/IconSupport.vue'
 
     Innovation hub for experimental projects, cutting-edge technologies, and creative explorations:
     <br /><br />
-    🚀 <strong>ConvergioAI</strong> — AI-Powered Convergence Platform (In Development)
+    🚀 <strong><a href="https://convergio.digitechnomads.com/" target="_blank" rel="noopener">ConvergioAI</a></strong> — open-source AI CRM (Live)
     <br />
-    <em>Revolutionizing how AI technologies converge with modern development workflows</em>
+    <em>Email, AI automation, content, and client work in one place</em>
     <br /><br />
     🔧 Research & Development — Exploring emerging technologies
     <br />

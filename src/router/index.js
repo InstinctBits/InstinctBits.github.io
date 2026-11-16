@@ -35,4 +35,28 @@ const router = createRouter({
   ],
 })
 
+const SITE = 'https://instinctbits.com'
+const titles = {
+  home: 'Instinct Bits–Where Passion Meets Innovation',
+  about: 'About | Instinct Bits',
+  communities: 'Communities | Instinct Bits',
+  'pixel-strike-force': 'Pixel Strike Force | Instinct Bits',
+  'instinct-bits-lab': 'Instinct Bits Lab | Instinct Bits',
+}
+
+function setAttr(selector, attr, value) {
+  const el = document.head.querySelector(selector)
+  if (el) el.setAttribute(attr, value)
+}
+
+router.afterEach((to) => {
+  const title = titles[to.name] || titles.home
+  const url = SITE + (to.path === '/' ? '/' : to.path)
+  document.title = title
+  setAttr('link[rel="canonical"]', 'href', url)
+  setAttr('meta[property="og:url"]', 'content', url)
+  setAttr('meta[property="og:title"]', 'content', title)
+  setAttr('meta[name="twitter:title"]', 'content', title)
+})
+
 export default router
