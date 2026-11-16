@@ -36,9 +36,10 @@ export default async (req) => {
   const contact = await fetch(`${API}/contacts`, {
     method: 'POST',
     headers,
-    body: JSON.stringify({ email, subscribed: true, data: { source: 'instinctbits.com' } }),
+    body: JSON.stringify({ email, subscribed: true }),
   })
   if (!contact.ok) return json({ error: 'Could not subscribe' }, 502)
+  const contactBody = await contact.json().catch(() => ({}))
 
   const members = await fetch(`${API}/segments/${SEGMENT_ID}/members`, {
     method: 'POST',
@@ -49,6 +50,32 @@ export default async (req) => {
   if (!members.ok || !result || (result.notFound || []).length) {
     return json({ error: 'Could not subscribe' }, 502)
   }
+
+  if (contactBody.data?.welcomed === true) return json({ ok: true }, 200)
+
+  const sent = await fetch(`${API}/v1/send`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({
+      to: email,
+      from: 'no-reply@pulse.digitechnomads.com',
+      fromName: 'Instinct Bits',
+      subject: "You're on the Instinct Bits list",
+      body: '<p>You subscribed for updates from Instinct Bits.</p><p>We will write when there is something to say: the lab, ConvergioAI, and the communities.</p><p>If you do not want these emails, <a href="{{unsubscribeUrl}}">unsubscribe</a>.</p>',
+      subscribed: true,
+    }),
+  })
+  if (!sent.ok) return json({ error: 'Subscribed, but the confirmation email failed' }, 502)
+
+  await fetch(`${API}/contacts`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({
+      email,
+      subscribed: true,
+      data: { source: 'instinctbits.com', welcomed: true },
+    }),
+  })
 
   return json({ ok: true }, 200)
 }
