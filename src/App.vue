@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import SubscribeForm from './components/SubscribeForm.vue'
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
 
   <RouterView />
+  <SubscribeForm />
 </template>
 
 <style scoped>

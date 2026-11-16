@@ -98,17 +98,6 @@ import ToolingIcon from '../components/icons/IconTooling.vue'
         Interested in our experiments and projects? Follow our progress, contribute ideas,
         or collaborate on exciting new ventures.
       </p>
-      <p class="community-info">
-        Join our <strong>TechSync</strong> community and stay updated with the latest innovations.
-      </p>
-      <div class="subscribe-form">
-        <input 
-          type="email" 
-          placeholder="Enter your email" 
-          class="email-input"
-        />
-        <button class="subscribe-btn">Subscribe</button>
-      </div>
     </div>
   </div>
 </template>
@@ -172,52 +161,6 @@ li {
 .cta-section p {
   margin-bottom: 1rem;
   line-height: 1.6;
-}
-
-.community-info {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-}
-
-.subscribe-form {
-  display: flex;
-  gap: 0.5rem;
-  max-width: 500px;
-  margin: 1.5rem auto 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.email-input {
-  flex: 1;
-  min-width: 250px;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  background: var(--color-background);
-  color: var(--color-text);
-  font-size: 1rem;
-}
-
-.email-input:focus {
-  outline: none;
-  border-color: var(--color-heading);
-}
-
-.subscribe-btn {
-  padding: 0.75rem 1.5rem;
-  background: var(--color-heading);
-  color: var(--color-background);
-  border: none;
-  border-radius: 6px;
-  font-weight: 500;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.subscribe-btn:hover {
-  opacity: 0.9;
 }
 
 .sponsor-section {

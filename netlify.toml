@@ -4,6 +4,12 @@
   functions = "netlify/functions"
   publish = "dist"
 
+  [[redirects]]
+    from = "/api/subscribe"
+    to = "/.netlify/functions/subscribe"
+    status = 200
+    force = true
+
   ## Redirect for Single Page Applications (Vue Router)
   [[redirects]]
     from = "/*"
